@@ -159,6 +159,6 @@ Alternatively, you can clone this repository and install the image useing the Do
 
      git clone https://github.com/averagehat/ngs_mapper.git
      cd ngs_mapper
-     docker build -t vdbwrair/ngs_mapper:latest
+     docker build -t vdbwrair/ngs_mapper:latest .
 
 If you want to use a different version you can checkout the specific git tag via `git checkout`.
