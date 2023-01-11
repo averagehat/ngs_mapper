@@ -79,19 +79,6 @@ The image can be installed via dockerhub:
 
      docker pull vdbwrair/ngs_mapper:latest
 
-Installing via Dockerfile
-++++++++++++++++++++++++
-
-Alternatively, you can clone this repository and install the image useing the Dockerfile present in this repository. 
-
-.. code-block:: bash
-
-     git clone https://github.com/averagehat/ngs_mapper.git
-     cd ngs_mapper
-     docker build -t vdbwrair/ngs_mapper:latest
-
-
-
 If you want to use a different version you can replace `latest` with any tag
 listed under https://hub.docker.com/r/vdbwrair/ngs_mapper/tags/
 
@@ -160,3 +147,18 @@ container when it runs
 .. code-block:: bash
 
     docker run -it -v /path/to/references:/references -v $PWD/output:/output -v /some/path/sampledata:/NGSDATA vdbwrair/ngs_mapper:latest runsample /NGSDATA/sample1 /references/ref.fasta -od /output/947 947
+
+
+
+Installing via Dockerfile
+++++++++++++++++++++++++
+
+Alternatively, you can clone this repository and install the image useing the Dockerfile present in this repository. 
+
+.. code-block:: bash
+
+     git clone https://github.com/averagehat/ngs_mapper.git
+     cd ngs_mapper
+     docker build -t vdbwrair/ngs_mapper:latest
+
+If you want to use a different version you can checkout the specific git tag via `git checkout`.
