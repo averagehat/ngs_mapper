@@ -70,8 +70,8 @@ The following requires that you have docker installed on your computer.
 You can get docker from visiting https://www.docker.com/ and clicking on the
 Operating System from the 'Get Docker' dropdown.
 
-Installing via Docker
-+++++++++++++++++++++
+Installing via DockerHub
+++++++++++++++++++++++++
 
 The image can be installed via dockerhub:
 
@@ -79,11 +79,16 @@ The image can be installed via dockerhub:
 
      docker pull vdbwrair/ngs_mapper:latest
 
+Installing via Dockerfile
+++++++++++++++++++++++++
+
 Alternatively, you can clone this repository and install the image useing the Dockerfile present in this repository. 
 
 .. code-block:: bash
 
      git clone https://github.com/averagehat/ngs_mapper.git
+     cd ngs_mapper
+     docker build -t vdbwrair/ngs_mapper:latest
 
 
 
