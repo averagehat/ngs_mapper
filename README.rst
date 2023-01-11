@@ -70,6 +70,30 @@ The following requires that you have docker installed on your computer.
 You can get docker from visiting https://www.docker.com/ and clicking on the
 Operating System from the 'Get Docker' dropdown.
 
+Installing via Docker
++++++++++++++++++++++
+
+The image can be installed via dockerhub:
+
+.. code-block:: bash
+
+     docker pull vdbwrair/ngs_mapper:latest
+
+Alternatively, you can clone this repository and install the image useing the Dockerfile present in this repository. 
+
+.. code-block:: bash
+
+     git clone https://github.com/averagehat/ngs_mapper.git
+
+
+
+If you want to use a different version you can replace `latest` with any tag
+listed under https://hub.docker.com/r/vdbwrair/ngs_mapper/tags/
+
+For example: `vdbwrair/ngs_mapper:v1.5.4` would use the `v1.5.4` version of
+ngs_mapper.
+
+
 Example on how to run runsample with Docker
 +++++++++++++++++++++++++++++++++++++++++++
 
@@ -82,19 +106,15 @@ to your local computer
 
 .. code-block:: bash
 
-     git clone https://github.com/VDBWRAIR/ngs_mapper.git
+     git clone https://github.com/averagehat/ngs_mapper.git
 
-Once you have cloned the repo you can then run through the following.
-
-In the below command we are instructing docker to mount the 
-`ngs_mapper/tests/fixtures/functional` directory from your local computer to 
-`/NGSDATA` inside of the docker container when it runs.
+Once you have cloned the repo you can then run through the following from inside the directory.
 
 In the below command we are instructing docker to mount the 
 `ngs_mapper/tests/fixtures/functional` directory from your local computer to 
 `/data` inside of the docker container when it runs.
 
-It is also mounting the current directory you are running the command from as
+It  also mouts the current directory you are running the command from as
 `/output` inside the container.
 
 You can then see that it is running the runsample command the same as you would
@@ -107,12 +127,6 @@ the output directory in your local computer.
 
 The `vdbwrair/ngs_mapper:latest` instructs docker to use the latest version
 of ngs_mapper from dockerhub. 
-
-If you want to use a different version you can replace `latest` with any tag
-listed under https://hub.docker.com/r/vdbwrair/ngs_mapper/tags/
-
-For example: `vdbwrair/ngs_mapper:v1.5.4` would use the `v1.5.4` version of
-ngs_mapper.
 
 .. code-block:: bash
 
