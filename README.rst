@@ -66,7 +66,6 @@ From there you can explore them on your own
 Running via Docker
 ^^^^^^^^^^^^^^^^^^
 
-<<<<<<< HEAD
 The following requires that you have docker installed on your computer.
 You can get docker from visiting https://www.docker.com/ and clicking on the
 Operating System from the 'Get Docker' dropdown.
